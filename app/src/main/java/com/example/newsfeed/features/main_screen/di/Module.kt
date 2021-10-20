@@ -1,6 +1,6 @@
 package com.example.newsfeed.features.main_screen.di
 
-import com.example.newsfeed.features.MainScreenViewModel
+import com.example.newsfeed.features.main_screen.ui.MainScreenViewModel
 import com.example.newsfeed.features.main_screen.data.api.NewsApi
 import com.example.newsfeed.features.main_screen.data.api.NewsRemoteSource
 import com.example.newsfeed.features.main_screen.data.api.NewsRepo
@@ -13,10 +13,10 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 //newsapi.org/v2/everything?q=bitcoin&apiKey=API_KEY
-const val BASE_URL = "newsapi.org/v2/everything?q=bitcoin&apiKey=API_KEY"
+const val BASE_URL = "https://newsapi.org/v2/top-headlines?country=us&apiKey=API_KEY"
 val  mainScreenModule = module{
     viewModel{
-        MainScreenViewModel()
+        MainScreenViewModel(get <NewsInteractor>())
     }
 
     single<OkHttpClient> {

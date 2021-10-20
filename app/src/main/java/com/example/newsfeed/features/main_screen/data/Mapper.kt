@@ -5,9 +5,9 @@ import com.example.newsfeed.features.main_screen.domain.model.ArticleDomainModel
 
 fun ArticleModel.toDomain() = ArticleDomainModel(
     author = this.author,
-   title = this.title,
-   description = this.description,
-   url = this.url,
-   publishedAt = this.publishedAt,
+    title = this.title,
+    description = this.description,
+    url = this.url,
+    publishedAt = this.publishedAt,
 
-)
+    )

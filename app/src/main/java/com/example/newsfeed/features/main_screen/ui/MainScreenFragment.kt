@@ -1,4 +1,4 @@
-package com.example.newsfeed.features
+package com.example.newsfeed.features.main_screen.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
