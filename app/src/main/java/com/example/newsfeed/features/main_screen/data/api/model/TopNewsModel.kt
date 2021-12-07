@@ -5,11 +5,11 @@ import com.google.gson.annotations.SerializedName
 data class TopNewsModel (
 
     @SerializedName("status")
-    val status: String,
+    val status: String?,
 
     @SerializedName("totalResults")
-    val totalResults: Int,
+    val totalResults: Int?,
 
     @SerializedName("articles")
-    val articles: List<ArticleModel>,
+    val articles: List<ArticleModel>?,
 )

@@ -10,7 +10,9 @@ interface NewsApi {
     @GET("v2/top-headlines")
   suspend  fun getTopHeadlines(
     @Query("country") country: String = "ru",
-    @Query("apiKey")  apiKey: String = "daa5bbe8c37b4154884e261dfa6cb771"
+    @Query("apiKey")  apiKey: String = "daa5bbe8c37b4154884e261dfa6cb771",
+
+
 ) : TopNewsModel
 
 }

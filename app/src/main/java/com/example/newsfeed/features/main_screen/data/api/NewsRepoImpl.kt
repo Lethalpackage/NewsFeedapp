@@ -5,7 +5,7 @@ import com.example.newsfeed.features.main_screen.domain.model.ArticleDomainModel
 
 class NewsRepoImpl (private val source: NewsRemoteSource): NewsRepo {
    override suspend fun getNews(): List<ArticleDomainModel> {
-        return source.getNews().articles.map {
+        return source.getNews().articles!!.map {
             it.toDomain()
         }
 

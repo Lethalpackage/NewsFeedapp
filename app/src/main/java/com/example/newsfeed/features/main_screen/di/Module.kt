@@ -13,7 +13,8 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 //newsapi.org/v2/everything?q=bitcoin&apiKey=API_KEY
-const val BASE_URL = "https://newsapi.org/v2/top-headlines?country=us&apiKey=API_KEY"
+const val BASE_URL = "https://newsapi.org/"
+
 val  mainScreenModule = module{
     viewModel{
         MainScreenViewModel(get <NewsInteractor>())
@@ -45,4 +46,5 @@ val  mainScreenModule = module{
     single<NewsInteractor> {
         NewsInteractor(get<NewsRepo>())
     }
+
 }
