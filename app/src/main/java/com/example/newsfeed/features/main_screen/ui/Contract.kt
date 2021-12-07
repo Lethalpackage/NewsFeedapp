@@ -17,5 +17,6 @@ sealed class UIEvent(): Event{
 sealed class DataEvent(): Event{
     object OnLoadData: DataEvent()
     data class SuccessNewsRequest(val articleList: List<ArticleDomainModel>): DataEvent()
+    data class ErrorNewsRequest(val error: Throwable): DataEvent()
 
 }
