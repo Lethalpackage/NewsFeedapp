@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">NewsFeed</string>
+    <string name="app_name">NewsApp</string>
+    <string name="publish_at">Опубликовано %1$s</string>
+    <string name="main">Главаная</string>
+    <string name="bookmark">Закладки</string>
+    <string name="news">Новости</string>
+    <string name="bookmark_list_is_empty">Список избранных пуст</string>
 </resources>
